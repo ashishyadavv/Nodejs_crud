@@ -1,0 +1,32 @@
+<h3><a href="/api/people" class="btn btn-secondary"><i class="fa fa-plus"></i>Add New</a> User List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>UserId</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.contact}}</td>
+                <td>{{user._id}}</td>
+                
+                <td>
+                    <a href="/api/people/{{user._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                    <a href="/api/people/delete/{{user._id}}" onclick="return confirm('Are you sure to delete this record?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+       
+    </tbody>
+</table>
+
+
+
+
+
